@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/SpringMicroserviceApp.iml" filepath="$PROJECT_DIR$/SpringMicroserviceApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/medicaltest-service/medicaltest-service.iml" filepath="$PROJECT_DIR$/medicaltest-service/medicaltest-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/patient-service/patient-service.iml" filepath="$PROJECT_DIR$/patient-service/patient-service.iml" />
     </modules>
   </component>
 </project>
