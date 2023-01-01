@@ -2,6 +2,9 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/config" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/configuration-server" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/eureka-server" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/medicaltest-service" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/patient-service" vcs="Git" />
   </component>

@@ -7,17 +7,24 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="patient-service" />
+        <module name="eureka-server" />
         <module name="medicaltest-service" />
+        <module name="configuration-server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="medicaltest-service" target="11" />
+      <module name="configuration-server" target="11" />
+      <module name="eureka-server" target="11" />
+      <module name="medicaltest-service" target="1.7" />
       <module name="patient-service" target="11" />
+      <module name="SpringMicroserviceApp" target="1.5" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="medicaltest-service" options="-parameters" />
+      <module name="configuration-server" options="-parameters" />
+      <module name="eureka-server" options="-parameters" />
+      <module name="medicaltest-service" options="" />
       <module name="patient-service" options="-parameters" />
     </option>
   </component>
