@@ -1,9 +1,0 @@
-[submodule "eureka-server"]
-	path = ./eureka-server
-	url = https://github.com/jaDEVirek/SpringMicroserviceApp/eureka-server.git
-[submodule "medical-service"]
-	path = ./medical-service
-	url = https://github.com/jaDEVirek/SpringMicroserviceApp/medical-service.git
-	[submodule "patient-service"]
-    	path = ./patient-service
-    	url = https://github.com/jaDEVirek/SpringMicroserviceApp/patient-service.git
