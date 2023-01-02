@@ -17,13 +17,13 @@
       <module name="eureka-server" target="11" />
       <module name="medicaltest-service" target="1.7" />
       <module name="patient-service" target="11" />
-      <module name="SpringMicroserviceApp" target="1.5" />
+      <module name="SpringMicroserviceApp" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="configuration-server" options="-parameters" />
-      <module name="eureka-server" options="-parameters" />
+      <module name="configuration-server" options="" />
+      <module name="eureka-server" options="" />
       <module name="medicaltest-service" options="" />
       <module name="patient-service" options="-parameters" />
     </option>
