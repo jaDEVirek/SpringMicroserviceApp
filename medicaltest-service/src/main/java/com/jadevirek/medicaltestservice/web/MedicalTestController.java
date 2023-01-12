@@ -23,57 +23,31 @@ public class MedicalTestController {
 
     @GetMapping
     public List<MedicalTest> getAllMedicalTests() {
-        return medicalTestService.findAll();
+        return medicalTestService.getAllMedicalTests();
     }
 
     @GetMapping("/{id}")
     public ResponseEntity<MedicalTest> getMedicalTestById(@PathVariable(value = "id") Long medicalTestId) {
-        MedicalTest medicalTest = medicalTestService.findById(medicalTestId)
+        MedicalTest medicalTest = medicalTestService.getMedicalTestById(medicalTestId)
                 .orElseThrow(() -> new ResourceNotFoundException("MedicalTest", "id", medicalTestId));
         return ResponseEntity.ok().body(medicalTest);
     }
 
     @PostMapping
     public MedicalTest createMedicalTest(@Valid @RequestBody MedicalTest medicalTest) {
-        return medicalTestService.save(medicalTest);
+        return medicalTestService.createMedicalTest(medicalTest);
     }
 
     @PutMapping("/{id}")
     public ResponseEntity<MedicalTest> updateMedicalTest(@PathVariable(value = "id") Long medicalTestId,
             @Valid @RequestBody MedicalTest medicalTestDetails) {
-        MedicalTest medicalTest = medicalTestService.getMedicalTestById(medicalTestId)
-                .orElseThrow(() -> new ResourceNotFoundException("MedicalTest", "id", medicalTestId));
-        medicalTest.setName(medicalTestDetails.getName());
-        medicalTest.setDescription(medicalTestDetails.getDescription());
-        medicalTest.setRange(medicalTestDetails.getRange());
-        medicalTest.setAboveNormSymptoms(medicalTestDetails.getAboveNormSymptoms());
-        medicalTest.setAboveNormReasons(medicalTestDetails.getAboveNormReasons());
-        medicalTest.setBelowNormReasons(medicalTestDetails.getBelowNormReasons());
-        medicalTest.setBelowNormSymptoms(medicalTestDetails.getBelowNormSymptoms());
-
-        MedicalTest updatedMedicalTest = medicalTestService.updateMedicalTest(medicalTest);
+        MedicalTest updatedMedicalTest = medicalTestService.updateMedicalTest(medicalTestId,medicalTestDetails);
         return ResponseEntity.ok(updatedMedicalTest);
-    }
-
-    @PutMapping("/{id}")
-    public MedicalTest updateMedicalTest(@PathVariable Long id, @RequestBody MedicalTest medicalTest) {
-        MedicalTest existingMedicalTest = repository.findById(id)
-                .orElseThrow(() -> new ResourceNotFoundException("MedicalTest", "id", id));
-        existingMedicalTest.setName(medicalTest.getName());
-        existingMedicalTest.setDescription(medicalTest.getDescription());
-        existingMedicalTest.setRange(medicalTest.getRange());
-        existingMedicalTest.setAboveNormSymptoms(medicalTest.getAboveNormSymptoms());
-        existingMedicalTest.setAboveNormReasons(medicalTest.getAboveNormReasons());
-        existingMedicalTest.setBelowNormReasons(medicalTest.getBelowNormReasons());
-        existingMedicalTest.setBelowNormSymptoms(medicalTest.getBelowNormSymptoms());
-        return repository.save(existingMedicalTest);
     }
     
     @DeleteMapping("/{id}")
     public ResponseEntity<?> deleteMedicalTest(@PathVariable Long id) {
-        MedicalTest medicalTest = repository.findById(id)
-                .orElseThrow(() -> new ResourceNotFoundException("MedicalTest", "id", id));
-        repository.delete(medicalTest);
+        medicalTestService.deleteMedicalTest(id);
         return ResponseEntity.ok().build();
     }
 }

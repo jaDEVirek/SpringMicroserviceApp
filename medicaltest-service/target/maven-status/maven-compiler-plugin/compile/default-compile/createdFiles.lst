@@ -1,0 +1,12 @@
+com\jadevirek\medicaltestservice\repository\MedicalTestPackageRepository.class
+com\jadevirek\medicaltestservice\service\MedicalTestService.class
+com\jadevirek\medicaltestservice\utils\ResourceNotFoundException.class
+com\jadevirek\medicaltestservice\repository\MedicalTestRepository.class
+com\jadevirek\medicaltestservice\web\MedicalTestController.class
+com\jadevirek\medicaltestservice\domain\entities\MedicalTestPackage.class
+com\jadevirek\medicaltestservice\domain\dto\MedicalTestDto.class
+com\jadevirek\medicaltestservice\MedicaltestServiceApplication.class
+com\jadevirek\medicaltestservice\domain\enums\MedicalField.class
+com\jadevirek\medicaltestservice\domain\entities\MedicalTest.class
+com\jadevirek\medicaltestservice\service\MedicalTestPackageService.class
+com\jadevirek\medicaltestservice\domain\entities\MedicalRange.class

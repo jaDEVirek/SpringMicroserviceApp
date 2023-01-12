@@ -28,8 +28,8 @@ public class MedicalTestService {
     }
 
     public Optional<MedicalTest> getMedicalTestById(Long id) {
-        return medicalTestRepository.findById(id)
-                .orElseThrow(() -> new ResourceNotFoundException("MedicalTest", "id", id));
+        return Optional.ofNullable(medicalTestRepository.findById(id)
+                .orElseThrow(() -> new ResourceNotFoundException("MedicalTest", "id", id)));
     }
 
     public MedicalTest updateMedicalTest(Long id, MedicalTest medicalTest) {

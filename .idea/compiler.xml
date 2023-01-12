@@ -15,7 +15,7 @@
     <bytecodeTargetLevel>
       <module name="configuration-server" target="11" />
       <module name="eureka-server" target="11" />
-      <module name="medicaltest-service" target="1.7" />
+      <module name="medicaltest-service" target="11" />
       <module name="patient-service" target="11" />
       <module name="SpringMicroserviceApp" target="11" />
     </bytecodeTargetLevel>
@@ -25,7 +25,7 @@
       <module name="configuration-server" options="" />
       <module name="eureka-server" options="" />
       <module name="medicaltest-service" options="" />
-      <module name="patient-service" options="-parameters" />
+      <module name="patient-service" options="" />
     </option>
   </component>
 </project>

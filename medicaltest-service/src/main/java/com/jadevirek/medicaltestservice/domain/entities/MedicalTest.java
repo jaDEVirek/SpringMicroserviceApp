@@ -97,4 +97,40 @@ import java.util.Objects;
     public String getBelowNormSymptoms() {
         return belowNormSymptoms;
     }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public void setVersion(int version) {
+        this.version = version;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public void setRange(MedicalRange range) {
+        this.range = range;
+    }
+
+    public void setAboveNormSymptoms(String aboveNormSymptoms) {
+        this.aboveNormSymptoms = aboveNormSymptoms;
+    }
+
+    public void setAboveNormReasons(String aboveNormReasons) {
+        this.aboveNormReasons = aboveNormReasons;
+    }
+
+    public void setBelowNormReasons(String belowNormReasons) {
+        this.belowNormReasons = belowNormReasons;
+    }
+
+    public void setBelowNormSymptoms(String belowNormSymptoms) {
+        this.belowNormSymptoms = belowNormSymptoms;
+    }
 }

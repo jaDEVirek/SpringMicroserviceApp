@@ -1,0 +1,12 @@
+D:\Programistyczne\IdeaProject\SpringMicroserviceApp\medicaltest-service\src\main\java\com\jadevirek\medicaltestservice\service\MedicalTestService.java
+D:\Programistyczne\IdeaProject\SpringMicroserviceApp\medicaltest-service\src\main\java\com\jadevirek\medicaltestservice\repository\MedicalTestRepository.java
+D:\Programistyczne\IdeaProject\SpringMicroserviceApp\medicaltest-service\src\main\java\com\jadevirek\medicaltestservice\domain\entities\MedicalRange.java
+D:\Programistyczne\IdeaProject\SpringMicroserviceApp\medicaltest-service\src\main\java\com\jadevirek\medicaltestservice\domain\entities\MedicalTest.java
+D:\Programistyczne\IdeaProject\SpringMicroserviceApp\medicaltest-service\src\main\java\com\jadevirek\medicaltestservice\domain\dto\MedicalTestDto.java
+D:\Programistyczne\IdeaProject\SpringMicroserviceApp\medicaltest-service\src\main\java\com\jadevirek\medicaltestservice\utils\ResourceNotFoundException.java
+D:\Programistyczne\IdeaProject\SpringMicroserviceApp\medicaltest-service\src\main\java\com\jadevirek\medicaltestservice\repository\MedicalTestPackageRepository.java
+D:\Programistyczne\IdeaProject\SpringMicroserviceApp\medicaltest-service\src\main\java\com\jadevirek\medicaltestservice\service\MedicalTestPackageService.java
+D:\Programistyczne\IdeaProject\SpringMicroserviceApp\medicaltest-service\src\main\java\com\jadevirek\medicaltestservice\MedicaltestServiceApplication.java
+D:\Programistyczne\IdeaProject\SpringMicroserviceApp\medicaltest-service\src\main\java\com\jadevirek\medicaltestservice\domain\enums\MedicalField.java
+D:\Programistyczne\IdeaProject\SpringMicroserviceApp\medicaltest-service\src\main\java\com\jadevirek\medicaltestservice\web\MedicalTestController.java
+D:\Programistyczne\IdeaProject\SpringMicroserviceApp\medicaltest-service\src\main\java\com\jadevirek\medicaltestservice\domain\entities\MedicalTestPackage.java
