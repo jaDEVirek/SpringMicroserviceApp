@@ -2,6 +2,7 @@ package com.jadevirek.patientservice.service;
 
 import com.jadevirek.patientservice.domain.entities.Patient;
 import com.jadevirek.patientservice.repository.PatientRepository;
+import com.jadevirek.patientservice.utils.InvalidPatientException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -31,14 +32,12 @@ public class PatientService {
     public Patient updatePatient(Long id, Patient patient) {
         Patient existingPatient = patientRepository.findById(id).orElse(null);
         if (existingPatient != null) {
-            // ustaw pola obiektu existingPatient na nowe wartości z obiektu patient
             existingPatient.setFirstName(patient.getFirstName());
             existingPatient.setAddress(patient.getAddress());
             existingPatient.setPhoneNumber(patient.getPhoneNumber());
-            // zapisz zmodyfikowanego pacjenta
             return patientRepository.save(existingPatient);
         } else {
-            return null;
+            throw  new InvalidPatientException(id, "Patient with given id not found.");
         }
     }
     public void deletePatient(Long id) {
