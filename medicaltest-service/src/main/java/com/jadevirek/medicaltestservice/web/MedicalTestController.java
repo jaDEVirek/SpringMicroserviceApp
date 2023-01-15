@@ -35,6 +35,8 @@ public class MedicalTestController {
     public List<MedicalTest> getAllMedicalTestsForPatients() {
         return getAllPatientsMedicalTests();
     }
+
+    // Example of possibility to cooperate with another service and extract the necessary data.
     public List<MedicalTest> getAllPatientsMedicalTests() {
         // Example of using Ribbon Load Balancer.
         // It can be received from another services.
